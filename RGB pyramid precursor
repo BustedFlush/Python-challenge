@@ -1,0 +1,11 @@
+string = "FTTTTTTTTTTTTTT"
+def tfpyramid(string):
+    nextrow = []
+    for i,x in enumerate(string[:-1]):
+        if x == string[i+1]:
+            nextrow.append(x)
+        else:
+            nextrow.append('F')
+    print(nextrow)
+    while len(nextrow) > 1:
+        return tfpyramid(nextrow)
