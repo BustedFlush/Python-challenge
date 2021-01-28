@@ -1,0 +1,6 @@
+lst = []
+def capital_indexes(str):
+    for i,v in enumerate(str):
+        if v.isupper():
+            lst.append(i)
+    return(lst)
